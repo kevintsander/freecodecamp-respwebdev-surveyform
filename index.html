@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cincinnati Chili Survey</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+    <div id="content">
+        <h1 id="title">Cincinnati Chili Survey</h1>
+        <p id="description">What is the best Cincinnati chili?</p>
+
+        <form id="survey-form">
+            <label for="name" id="name-label">
+                <p>Name:</p> 
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            <label for="email" id="email-label">
+                <p>Email:</p> 
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </label>
+            <label for="number" id="number-label">
+                <p>Age:</p> 
+                <input id="number" type="number" min="0" max="120" placeholder="Enter your age">
+            </label>
+            <label for="dropdown">
+                <p>Origin:</p>
+                <select id="dropdown">
+                    <option value="non-resident">Non-resident</option>
+                    <option value="new-resident">Resident 1-4 years</option>
+                    <option value="resident-5">Resident 5+ years</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>How much do you like Cincinnati Chili in general?</legend>
+                <label for="radio-0"><input id="radio-0" type="radio" name="radio" value="0">Not at all</label>
+                <label for="radio-some"><input id="radio-some" type="radio" name="radio" value="some">Somewhat</label>
+                <label for="radio-a-lot"><input id="radio-a-lot" type="radio" name="radio" value="a-lot">A lot</label>
+            </fieldset>
+            <fieldset>
+                <legend>Select your favorite chili restaurants:</legend>
+                <label for="checkbox-skyline"><input id="checkbox-skyline" type="checkbox" name="checkbox" value="skyline">Skyline Chili</label>
+                <label for="checkbox-goldstar"><input id="checkbox-goldstar" type="checkbox" name="checkbox" value="goldstar">Gold Star Chili</label>
+                <label for="checkbox-empress"><input id="checkbox-empress" type="checkbox" name="checkbox" value="empress">Empress Chili</label>
+                <label for="checkbox-camp-wash"><input id="checkbox-camp-wash" type="checkbox" name="checkbox" value="camp-wash">Camp Washington Chili</label>
+                <label for="checkbox-prc"><input id="checkbox-prc" type="checkbox" name="checkbox" value="prc">Pleasant Ridge Chili</label>
+                <label for="checkbox-phc"><input id="checkbox-phc" type="checkbox" name="checkbox" value="phc">Price Hill Chili</label>
+            </fieldset>
+            <label for="comments">
+                <textarea id="comments" name="comments" placeholder="Enter additional comments" rows="5" cols="50"></textarea>
+            </label>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

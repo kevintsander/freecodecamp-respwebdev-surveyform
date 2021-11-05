@@ -1,0 +1,43 @@
+body {
+    padding: 40px 150px;
+    background-image: url("/images/chili-pattern.jpeg");
+    font-family: 'Roboto', Arial, sans-serif
+}
+
+h1 {
+    margin: 0;
+}
+
+#content {
+    background-color: #01004a;
+    color: rgba(255, 255, 255, 85%);
+    border-radius: 10px;
+    padding: 40px 80px;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label p {
+    margin: 4px;
+}
+
+input, select, fieldset {
+    margin: 10px 4px;
+}
+
+button {
+    margin: 10px auto 0 0;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+
+fieldset legend {
+    font-size: 24px;
+}
