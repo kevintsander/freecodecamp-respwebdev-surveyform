@@ -36,8 +36,12 @@ fieldset {
     display: flex;
     flex-direction: column;
     border: 0;
+    padding: 0;
+    margin: 20px 0;
 }
 
 fieldset legend {
     font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 8px;
 }
