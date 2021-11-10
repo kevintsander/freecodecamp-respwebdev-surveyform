@@ -7,25 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cincinnati Chili Survey</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <div id="content">
-        <h1 id="title">Cincinnati Chili Survey</h1>
-        <p id="description">What is the best Cincinnati chili?</p>
+        <div id="content-header">
+            <h1 id="title">Cincinnati Chili Survey</h1>
+            <p id="description">What is the best Cincinnati chili?</p>
+        </div>
 
         <form id="survey-form">
             <label for="name" id="name-label">
-                <p>Name:</p> 
+                <p>Name:</p>
                 <input id="name" type="text" placeholder="Enter your name" required>
             </label>
             <label for="email" id="email-label">
-                <p>Email:</p> 
+                <p>Email:</p>
                 <input id="email" type="email" placeholder="Enter your email" required>
             </label>
             <label for="number" id="number-label">
-                <p>Age:</p> 
+                <p>Age:</p>
                 <input id="number" type="number" min="0" max="120" placeholder="Enter your age">
             </label>
             <label for="dropdown">
@@ -44,15 +49,22 @@
             </fieldset>
             <fieldset>
                 <legend>Select your favorite chili restaurants:</legend>
-                <label for="checkbox-skyline"><input id="checkbox-skyline" type="checkbox" name="checkbox" value="skyline">Skyline Chili</label>
-                <label for="checkbox-goldstar"><input id="checkbox-goldstar" type="checkbox" name="checkbox" value="goldstar">Gold Star Chili</label>
-                <label for="checkbox-empress"><input id="checkbox-empress" type="checkbox" name="checkbox" value="empress">Empress Chili</label>
-                <label for="checkbox-camp-wash"><input id="checkbox-camp-wash" type="checkbox" name="checkbox" value="camp-wash">Camp Washington Chili</label>
-                <label for="checkbox-prc"><input id="checkbox-prc" type="checkbox" name="checkbox" value="prc">Pleasant Ridge Chili</label>
-                <label for="checkbox-phc"><input id="checkbox-phc" type="checkbox" name="checkbox" value="phc">Price Hill Chili</label>
+                <label for="checkbox-skyline"><input id="checkbox-skyline" type="checkbox" name="checkbox"
+                        value="skyline">Skyline Chili</label>
+                <label for="checkbox-goldstar"><input id="checkbox-goldstar" type="checkbox" name="checkbox"
+                        value="goldstar">Gold Star Chili</label>
+                <label for="checkbox-empress"><input id="checkbox-empress" type="checkbox" name="checkbox"
+                        value="empress">Empress Chili</label>
+                <label for="checkbox-camp-wash"><input id="checkbox-camp-wash" type="checkbox" name="checkbox"
+                        value="camp-wash">Camp Washington Chili</label>
+                <label for="checkbox-prc"><input id="checkbox-prc" type="checkbox" name="checkbox" value="prc">Pleasant
+                    Ridge Chili</label>
+                <label for="checkbox-phc"><input id="checkbox-phc" type="checkbox" name="checkbox" value="phc">Price
+                    Hill Chili</label>
             </fieldset>
             <label for="comments">
-                <textarea id="comments" name="comments" placeholder="Enter additional comments" rows="5" cols="50"></textarea>
+                <textarea id="comments" name="comments" placeholder="Enter additional comments" rows="5"
+                    cols="50"></textarea>
             </label>
 
             <button id="submit" type="submit">Submit</button>
